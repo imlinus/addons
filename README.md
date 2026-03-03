@@ -1,8 +1,6 @@
 # Addons
 
-Here are my personal firefox addons. I use firefox developer edition in order to run these.
-
-A collection of personal extensions used to enhance privacy, security, and the development workflow.
+Here are a collection of my personal firefox addons.
 
 > **Note:** I Use **Firefox Developer Edition** to run these extensions, allowing the use of unsigned developer tools.
 
