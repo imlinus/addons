@@ -1,0 +1,5 @@
+# password.json is protected
+<Files "passwords.json">
+    Order allow,deny
+    Deny from all
+</Files>

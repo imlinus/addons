@@ -1,0 +1,49 @@
+{
+  "manifest_version": 3,
+  "name": "AdBlock",
+  "version": "0.1.0",
+  "description": "Lightweight adblocker using Merged Blocklists with cosmetic filtering",
+  "permissions": [
+    "declarativeNetRequest",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "hagezi_pro_mini",
+        "enabled": true,
+        "path": "rules/blocklist.json"
+      }
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["content/cosmetic.css"],
+      "js": ["content/cosmetic.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "48": "icons/icon-48.png",
+      "96": "icons/icon-96.png"
+    },
+    "default_title": "DIY AdBlock"
+  },
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "adblock@imlinus.extension",
+      "strict_min_version": "109.0"
+    }
+  }
+}

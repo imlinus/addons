@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Passwords",
+  "version": "0.1.0",
+  "description": "A secure password manager with 2FA/TOTP support and encrypted VPS sync",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "action": {
+    "default_popup": "popup/passwordPopup.html",
+    "default_icon": {
+      "48": "icons/icon-48.png",
+      "96": "icons/icon-96.png"
+    },
+    "default_title": "Passwords"
+  },
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "passwords@imlinus.extension",
+      "strict_min_version": "109.0"
+    }
+  }
+}

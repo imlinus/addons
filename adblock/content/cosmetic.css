@@ -1,0 +1,143 @@
+/* Cosmetic Filtering - Hide blocked ad containers */
+
+/* Common ad containers by ID */
+#ad,
+#ads,
+#advert,
+#advertisement,
+#ad-container,
+#ad-banner,
+#ad-top,
+#ad-bottom,
+#ad-side,
+#ad-sidebar,
+#ad-header,
+#ad-footer,
+#google-ads,
+#google_ads,
+#sponsored,
+#sponsored-content,
+div[id^="ad-"],
+div[id^="ads-"],
+div[id^="google_ads"],
+div[id*="-ad-"],
+div[id*="-ads-"] {
+    display: none !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    max-height: 0 !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Common ad containers by class */
+.ad,
+.ads,
+.advert,
+.advertisement,
+.ad-container,
+.ad-banner,
+.ad-placement,
+.ad-slot,
+.ad-unit,
+.google-ad,
+.google-ads,
+.sponsored,
+.sponsored-content,
+.sponsored-post,
+div[class^="ad-"],
+div[class^="ads-"],
+div[class*="-ad-"],
+div[class*="-ads-"],
+div[class*="advert"],
+div[class*="sponsor"] {
+    display: none !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    max-height: 0 !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Common ad sizes (IAB standard sizes) */
+iframe[width="728"][height="90"],    /* Leaderboard */
+iframe[width="300"][height="250"],   /* Medium Rectangle */
+iframe[width="336"][height="280"],   /* Large Rectangle */
+iframe[width="320"][height="50"],    /* Mobile Banner */
+iframe[width="320"][height="100"],   /* Large Mobile Banner */
+iframe[width="468"][height="60"],    /* Full Banner */
+iframe[width="234"][height="60"],    /* Half Banner */
+iframe[width="120"][height="600"],   /* Skyscraper */
+iframe[width="160"][height="600"],   /* Wide Skyscraper */
+iframe[width="300"][height="600"],   /* Half Page */
+iframe[width="970"][height="250"],   /* Billboard */
+iframe[width="970"][height="90"]     /* Super Leaderboard */
+{
+    display: none !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    max-height: 0 !important;
+    visibility: hidden !important;
+}
+
+/* Google AdSense */
+ins.adsbygoogle,
+.adsbygoogle {
+    display: none !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    visibility: hidden !important;
+}
+
+/* Common ad networks */
+div[data-ad-slot],
+div[data-ad-client],
+div[data-google-query-id],
+amp-ad,
+amp-embed[type="adsense"],
+.amazon-ad {
+    display: none !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    visibility: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Outbrain, Taboola, etc. */
+.OUTBRAIN,
+[data-outbrain],
+.taboola,
+[data-taboola],
+.tbl-feed-container {
+    display: none !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    visibility: hidden !important;
+}
+
+/* Video ads */
+.video-ads,
+.video-ad,
+.ima-ad-container,
+.ytp-ad-module {
+    display: none !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    visibility: hidden !important;
+}
+
+/* Social media ads */
+div[data-testid*="ad"],
+div[data-testid="placementTracking"],
+[data-sponsor],
+[data-sponsored] {
+    display: none !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    visibility: hidden !important;
+}
