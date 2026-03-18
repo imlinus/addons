@@ -1,0 +1,131 @@
+/* --- Base Rules --- */
+:root {
+  --color-primary: #ff3c00;
+  --color-primary-hover: #e63600;
+  --color-bg: #121212;
+  --color-surface: #1e1e1e;
+  --color-text: #ffffff;
+  --color-text-muted: #b0b0b0;
+  --color-border: #333333;
+  --border-radius: 8px;
+  --transition-speed: 0.2s;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  width: 320px;
+}
+
+/* --- Layout Rules --- */
+.container {
+  padding: 1.5rem;
+}
+
+.l-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* --- Module Rules --- */
+.header__title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #fff 0%, #aaa 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.download-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-speed) ease;
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  text-align: left;
+}
+
+.button:hover:not(:disabled) {
+  background-color: var(--color-border);
+  transform: translateY(-1px);
+}
+
+.button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  filter: grayscale(1);
+}
+
+.button.is-primary {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #cc3000 100%);
+  border: none;
+  box-shadow: 0 4px 14px rgba(255, 60, 0, 0.2);
+}
+
+.button.is-primary:hover:not(:disabled) {
+  background: linear-gradient(135deg, #ff4d1a 0%, var(--color-primary) 100%);
+  box-shadow: 0 6px 20px rgba(255, 60, 0, 0.3);
+}
+
+.button__icon {
+  margin-right: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.button.is-fullwidth {
+  width: 100%;
+}
+
+.footer__text {
+  margin: 0;
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+.status-message {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: var(--border-radius);
+  font-size: 0.85rem;
+  text-align: center;
+  color: var(--color-text-muted);
+}
+
+/* --- State Rules --- */
+.is-hidden {
+  display: none;
+}

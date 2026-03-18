@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV4 Play Downloader</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body class="theme-dark">
+    <div class="container l-main">
+        <header class="header m-header">
+            <h1 class="header__title">TV4 Media</h1>
+        </header>
+
+        <main class="content m-content">
+            <div id="status-message" class="status-message is-hidden">Hittade ingen media...</div>
+            
+            <ul class="download-list">
+                <li class="download-item">
+                    <button id="download-backdrop" class="button is-primary is-fullwidth" disabled>
+                        <span class="button__icon">🖼️</span>
+                        <span class="button__text">Download backdrop.jpg</span>
+                    </button>
+                </li>
+                <li class="download-item">
+                    <button id="download-trailer" class="button is-primary is-fullwidth" disabled>
+                        <span class="button__icon">🎥</span>
+                        <span class="button__text">Download trailer.mp4</span>
+                    </button>
+                </li>
+                <li class="download-item">
+                    <button id="download-logo" class="button is-primary is-fullwidth" disabled>
+                        <span class="button__icon">🏷️</span>
+                        <span class="button__text">Download logo.png</span>
+                    </button>
+                </li>
+            </ul>
+        </main>
+
+        <footer class="footer m-footer">
+            <p class="footer__text">TV4 Play Downloader v1.0.0</p>
+        </footer>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

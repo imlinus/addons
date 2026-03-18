@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "TV4 Play Media Downloader",
+  "version": "1.0.0",
+  "description": "Download backdrop, trailer, and logo from TV4 Play program pages",
+  "permissions": [
+    "activeTab",
+    "downloads",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*.tv4play.se/*",
+    "https://*.a2d.tv/*",
+    "https://*.tv4.incomet.io/*"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "48": "icons/icon-48.png",
+      "96": "icons/icon-96.png"
+    }
+  },
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "tv4play-downloader@imlinus.extension"
+    }
+  }
+}
